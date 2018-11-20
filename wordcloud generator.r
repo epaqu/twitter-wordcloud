@@ -52,7 +52,7 @@ run <-  function(term, conAPI, conSecret, accAPI, accSecret) {
   myPalette <- c("#F47722", "#ED1A77", "#CB519D", "#F7B7D1")
 
   #plots
-  wordcloud2(result, size=10, figPath = "C:/Users/Jaewoo/desktop/mask.png", color = "#EB0510", fontFamily="Times New Roman")
+  wordcloud2(result, size=10, figPath = "mask.png", color = "#EB0510", fontFamily="Times New Roman")
   #letterCloud(result, word="NETFLIX", size=5, wordSize=2, fontFamily="Knights Quest", color="white", backgroundColor="pink")
 }
 
