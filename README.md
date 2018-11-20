@@ -24,12 +24,12 @@ generates a wordcloud by scraping tweets from twitter
 
 (6) After you run once, try to filter out nonsense words by adding them into the filter.
     You can find the filter inside word_generator.R:
-    
-      #Remove other nonsense words
-      result <-result %>%
-        filter(!word %in% c('t.co', 'https', 'handmaidstale', "handmaid's", 'season', 'episode', 'de', 'handmaidsonhulu',
-                            'tvtime', 'watched', 'watching', 'watch', 'la', "it's", 'el', 'en', 'tv', 'je', 'ep', 'week',
-                            'amp', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', 'amp', 'http', 'wgng3spngl'))
+	
+	#Remove other nonsense words
+	result <-result %>%
+	filter(!word %in% c('t.co', 'https', 'handmaidstale', "handmaid's", 'season', 'episode', 'de', 'handmaidsonhulu',
+						'tvtime', 'watched', 'watching', 'watch', 'la', "it's", 'el', 'en', 'tv', 'je', 'ep', 'week',
+						'amp', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', 'amp', 'http', 'wgng3spngl'))
 
-    Simply add the nonsense words you do not want inside the bracket.
-    Do not forget to put them inside quotation marks.
+(7)	Simply add the nonsense words you do not want inside the bracket.
+	Do not forget to put them inside quotation marks.
